@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden;
+  background-color: #000000;
+}
+/* right-section */
+.wrapper .right-wrapper {
+}
+.wrapper .right-wrapper h1 {
+  color: #ffffff;
+}
+.wrapper .right-wrapper h2 {
+  color: #ffffff;
+}
+.marquee-content {
+  height: 100%;
+  animation: marqueeAnimation 10s linear infinite;
+}
+
+.marquee {
+  background-color: #b9a0ff;
+  height: 100vh;
+  overflow: hidden;
+  width: 100px;
+}
+
+.marquee-content h3 {
+  margin: 0 10px;
+  white-space: nowrap;
+  transform: rotate(90deg);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.marquee-content svg {
+  margin: 0 5px;
+  transform: rotate(90deg);
+}
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
